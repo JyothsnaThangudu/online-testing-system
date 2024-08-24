@@ -1,0 +1,15 @@
+{% extends "main.html" %}
+{% load static %}
+
+{% block title %} Welcome to Online Testing System {% endblock title%}
+
+{% block top %}
+    <a href = "{% url 'OTS:registrationForm' %}">Signup</a>
+    <a href = "{% url 'OTS:login' %}">Login</a>
+{% endblock %}
+{% block content %}
+    <p class="welcome-text">
+        Welcome to the Online Testing System, your go-to platform for comprehensive online assessments and tests. Our system is designed to help you create, manage, and take tests efficiently, whether for educational purposes, professional certifications, or personal evaluation. With a user-friendly interface and robust features, we aim to provide an optimal testing experience.
+    </p>
+    <img src="{% static 'test.jpg' %}" alt="Online Testing System" style="max-width: 100%; height: auto;">
+{% endblock %}
